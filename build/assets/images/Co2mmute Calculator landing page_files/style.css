@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #2c3531;
+    line-height: 1.5;
+}
+
+/*Lots of Nav stuff*/
+nav, footer {
+    padding: 1.5% 0;
+    background-color: #262228;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+}
+
+ul {
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+    margin:auto;
+}
+
+div#sign-in-buttons {
+    width: 20%;
+    display: inline-block;
+    margin:auto;
+}
+
+button#js-signin-link, #js-signout-link {
+    color: white;
+    letter-spacing: 1px;
+    background-color: #0375B4;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+button#js-signin-link:hover, #js-signout-link:hover {
+    background-color: #0394e2;
+}
+
+a {
+    padding: 0 15px 0 15px;
+    font-size: 1.1em;
+    color: white;
+}
+
+a:hover {
+    color: #0394e2;
+    text-decoration: none;
+}
+
+a#main-logo {
+    color: #ffce00;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/*///////////Sign-in section/////////////*/
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    padding: 5% 0;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+section#sign-in-section{
+    min-height: 200px;
+    padding: 30px 0;
+    background-color: #0375B4;
+    color: white;
+}
+
+header#sign-in-header {
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+form#signin-form {
+    margin: auto;
+    width: 40%;
+}
+
+input#username, #password {
+    width: 30%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px
+}
+
+button#js-signin-button {
+    color: #262228;
+    letter-spacing: 1px;
+    background-color: #ffce00;
+    width: 90px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+button#js-signin-button:hover {
+    background-color: #ffe066;
+}
+
+/*///////////Main and purpose section/////////////*/
+
+section#main-header {
+    padding: 5% 0;
+    background-image: url("/commute-calculator-final-capstone/images/co2mmuteSectionImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0375B4;
+   background-attachment: fixed;
+
+}
+
+header#page-title {
+    color: #2c3531;
+    font-size: 3.5em;
+
+}
+
+section#purpose-statement {
+    min-height: 200px;
+    padding: 30px 0;
+    background-color: #2c3531;
+    color: #00995e;
+}
+
+div#site-description {
+    width: 45%;
+    margin: auto;
+    display: inline-block;
+}
+p {
+    margin: 0 auto;
+    max-width: 650px;
+    font-size: 1.5em;
+}
+
+div#site-infographic {
+    width: 50%;
+    margin: auto;
+    display: inline-block;
+}
+
+img#infographic {
+    width: 75%;
+}
+
+
+/*///////////Sign-up section/////////////*/
+
+section#sign-up {
+    min-height: 200px;
+    padding: 30px 0;
+    background-color: #ffce00;
+    color: #2c3531;
+    font-size: 1.1em;
+    line-height: 2.0em;
+}
+
+
+input#signup-username, #signup-password, #confirm-password {
+    width: 30%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+button#js-signup-button {
+    color: #262228;
+    letter-spacing: 1px;
+    background-color: #0375b4;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+button#js-signup-button:hover {
+    background-color: #0394e2;
+}
+
+
+
+/*miles submission form*/
+
+section:nth-child(1) {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #0375b4;
+    color: lightgray;
+    
+}
+
+section#miles-total div {
+    min-height: 100px;
+    margin: auto;
+    width: 30%;
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 5px;
+    color: #c64448
+}
+
+
+
+form#miles-form div {
+    margin: auto;
+    width: 30%;
+    display: inline-block;
+    border: none;
+}
+
+/*How many miles section*/
+
+section:nth-child(2) {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: #00995e;
+}
+
+form input {
+    width: 70%;
+    border: 1px solid black;
+}
+
+form button:hover {
+    background-color: lightgray;
+}
+
+input#date, #miles{
+    width: 60%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+button#convert-button {
+    color: #262228;
+    letter-spacing: 1px;
+    background-color: #0375b4;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+button#js-signup-button:hover {
+    background-color: #0394e2;
+}
+
+
+/*miles total table*/
+section:nth-child(3) {
+    padding-top: 5%;
+    background-color: lightgray;
+}
+
+table {
+    background-color: white;
+    margin: auto;
+    width: 60%;
+
+}
+
+table th {
+    font-size: 1.2em;
+    background-color: darkgray;
+}
+
+table tr {
+
+    height: 30px;
+    border: none;
+}
+
+table tr:hover {
+    background-color: darkgray;
+}
+
+
+

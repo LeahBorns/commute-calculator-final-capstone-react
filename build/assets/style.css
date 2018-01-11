@@ -1,0 +1,929 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    padding: 0 15px 0 15px;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0394e2;
+    text-decoration: none;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+}
+
+main.wrapper {
+    min-height: 100%;
+}
+
+section {
+    min-height: 300px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 2% 0;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Lots of Nav stuff*/
+
+nav,
+footer {
+    padding: 1% 0;
+    background-color: #262228;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+p#footer-note {
+    text-align: center;
+    font-size: 1em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+}
+
+nav .demoMessage {
+    position: fixed;
+    top: 0px;
+    left: 35%;
+    background-color: #ffce00;
+    color: #2c3531;
+    padding: 10px 5%;
+    width: 30%;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+nav .demoMessage span,
+nav .demoMessage a {
+    color: #2c3531;
+
+}
+
+nav .demoMessage a {
+    cursor: pointer;
+    color: #0375B4;
+}
+
+nav .demoMessage #hideBtn {
+    padding: 2px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#nav-logo {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+    margin: auto;
+}
+
+a#main-logo {
+    color: #ffce00;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+a#main-logo sub {
+    color: #ffce00;
+    font-family: 'Roboto Slab', serif;
+}
+
+div#nav-links {
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+}
+
+div#sign-in-buttons {
+    width: 20%;
+    display: inline-block;
+    margin: auto;
+}
+
+button#js-signin-link,
+#js-signout-link {
+    color: white;
+    letter-spacing: 1px;
+    background-color: #0375B4;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+button#js-signin-link,
+#js-signout-link {
+    color: white;
+    letter-spacing: 1px;
+    background-color: #0375B4;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+button#js-signout-link {
+    width: 200px;
+}
+
+button#js-signin-link:hover,
+#js-signout-link:hover {
+    background-color: #0394e2;
+}
+
+/*Sign-in section*/
+
+section#sign-in-section {
+    padding: 30px 0;
+    background-color: #0375B4;
+}
+
+header#sign-in-header {
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+header#sign-in-header sub {
+    color: white;
+}
+
+form#signin-form {
+    margin: auto;
+    width: 40%;
+}
+
+label#signin-label,
+#password-label {
+    font-size: 1em;
+    width: 22%;
+    margin: auto;
+    color: white;
+}
+
+input#username,
+#password {
+    width: 30%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+button#js-signin-button {
+    color: #262228;
+    letter-spacing: 1px;
+    background-color: #ffce00;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+button#js-signin-button:hover {
+    background-color: #ffe066;
+}
+
+/*Main and purpose section*/
+
+section#main-header {
+    padding: 35% 0 0 0;
+    background-image: url("/assets/images/co2mmuteSectionImg.jpg");
+    background-size: 155%;
+    background-position: center top 150px;
+    background-repeat: no-repeat;
+    background-color: #0375B4;
+    background-attachment: fixed;
+    vertical-align: top;
+}
+
+header#page-title {
+    font-family: 'Roboto Slab', serif;
+    color: #2c3531;
+    font-size: 3.5em;
+}
+
+/*Purpose section*/
+
+section#purpose-statement {
+    padding: 75px 0;
+    background-color: #fff;
+    color: #000;
+    background-image: url("/assets/images/tree-section.png");
+    background-size: 115%;
+    background-position: center top 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h2#purpose-header {
+    width: 15%;
+    color: #262228;
+    display: inline-block;
+    text-align: right;
+    vertical-align: text-bottom;
+    margin: 0;
+}
+
+div#site-description {
+    width: 50%;
+    margin: 0 auto 50px auto;
+    display: inline-block;
+
+}
+
+p#about-one {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 50px;
+    line-height: 1.4em;
+}
+
+div#site-infographic {
+    width: 60%;
+    margin: auto;
+}
+
+img#infographic {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+div#how-it-works {
+    width: 25%;
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 100px auto;
+}
+
+div#submit-screen {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+div#submit-screen img {
+    width: 90%;
+    display: inline-block;
+}
+
+
+/*Sign-up section*/
+
+section#sign-up {
+    padding: 30px 0;
+    background-color: #ffce00;
+    color: #2c3531;
+    font-size: 1em;
+    line-height: 3em;
+}
+
+label#label-username,
+#label-password,
+#label-repassword {
+    display: block;
+    font-size: 1.2em;
+}
+
+input#signup-username,
+#signup-password,
+#confirm-password {
+    width: 40%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', serif;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+    line-height: 2em;
+}
+
+button#js-signup-button {
+    color: #262228;
+    letter-spacing: 1px;
+    background-color: #0375b4;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+button#js-signup-button:hover {
+    background-color: #0394e2;
+}
+
+/*miles submission form*/
+
+section:nth-child(1) {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #0375b4;
+    color: white;
+    background-image: url("/assets/images/co2mmute-calculation-section.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#miles-total div {
+    margin: auto;
+    width: 25%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
+    color: #c64448;
+    padding: 30px;
+}
+
+section#miles-total div div.card-name {
+    width: 100%;
+    background: none;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+}
+
+h3#green-car {
+    margin-bottom: 1em;
+}
+
+p.mpg {
+    color: #262228;
+}
+
+section#miles-total div img {
+    width: 80%;
+}
+
+form#miles-form div {
+    margin: auto;
+    width: 30%;
+    border: none;
+}
+
+/*How many miles section*/
+
+section:nth-child(2) {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: #00995e;
+}
+
+form label {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+form button:hover {
+    background-color: lightgray;
+}
+
+input#date,
+#miles {
+    width: 60%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    line-height: 2em;
+    font-family: 'Roboto', serif;
+}
+
+button#convert-button {
+    color: #2c3531;
+    letter-spacing: 1px;
+    background-color: #ffce00;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', serif;
+}
+
+button#convert-button:hover {
+    background-color: #ffe066;
+}
+
+
+/*miles total table*/
+
+section:nth-child(3) {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    background-color: #2c3531;
+    color: white;
+    background-image: url("/assets/images/bike-section.png");
+    background-size: 100%;
+    background-position: center left;
+    background-attachment: fixed;
+}
+
+table {
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    color: #2c3531;
+}
+
+table th {
+    font-size: 1.2em;
+    background-color: #c64448;
+}
+
+table tr {
+    height: 30px;
+    border: none;
+}
+
+table tr:hover {
+    background-color: #c64448;
+}
+
+/* Media Query*/
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        font-size: 1em;
+    }
+
+    /*Nav*/
+    a#main-logo {
+        font-size: 1.2em;
+    }
+
+    div#nav-links {
+        font-size: 0.9em;
+    }
+
+    button#js-signin-link,
+    #js-signout-link {
+        width: 70px;
+        font-size: 0.7em;
+    }
+
+    /*sign-in Section*/
+    section#sign-in-section {
+        font-size: 0.9em;
+    }
+
+    input#username,
+    #password {
+        width: 30%;
+        font-size: 0.9em;
+    }
+
+    button#js-signin-button {
+        width: 70px;
+        font-size: 0.9em;
+    }
+
+    /*Header Section*/
+    header#page-title {
+        font-size: 2.5em;
+    }
+
+    h2#purpose-header {
+        width: 20%;
+        font-size: 1.5em;
+        vertical-align: top;
+    }
+
+    div#site-description {
+        width: 50%;
+    }
+
+    p#about-one {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    div#how-it-works {
+        font-size: 1.1em;
+    }
+
+    /*signup section*/
+    label#label-username,
+    #label-password,
+    #label-repassword {
+        font-size: 1em;
+    }
+
+    input#signup-username,
+    #signup-password,
+    #confirm-password {
+        font-size: 0.9em;
+    }
+
+    button#js-signup-button {
+        width: 80px;
+        font-size: 0.9em;
+    }
+
+    /*User overall numbers section*/
+    section#miles-total div div.card-name {
+        font-size: 1.2em;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    h3#green-car {
+        margin-bottom: 1rem;
+    }
+
+    /*convert form section*/
+    form label {
+        font-size: 1em;
+        line-height: 2.0em;
+    }
+
+    button#convert-button {
+        width: 80px;
+        font-size: 0.9em;
+    }
+
+    /*table section*/
+    table th {
+        font-size: 1em;
+    }
+
+    table tr {
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    /*Nav*/
+    div#nav-logo {
+        width: 41%;
+    }
+
+    a#main-logo {
+        font-size: 1em;
+    }
+
+    div#nav-links {
+        width: 35%;
+        font-size: 0.8em;
+    }
+
+    button#js-signin-link,
+    #js-signout-link {
+        padding: 7px;
+    }
+
+    button#js-signout-link {
+        width: 100%;
+    }
+
+    /*sign-in Section*/
+    section#sign-in-section {
+        font-size: 0.8em;
+    }
+
+    input#username,
+    #password {
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    button#js-signin-button {
+        width: 70px;
+        font-size: 0.9em;
+        padding: 7px;
+    }
+
+    /*Header Section*/
+    header#page-title {
+        font-size: 2.2em;
+    }
+
+    /*purpose section*/
+    h1#purpose-header {
+        font-size: 1.2em;
+    }
+
+    div#site-description {
+        width: 55%;
+    }
+
+    p#about-one {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    div#site-infographic {
+        width: 80%;
+        margin: auto;
+    }
+
+    div#how-it-works {
+        font-size: 0.9em;
+    }
+
+    div#submit-screen {
+        width: 65%;
+        margin-top: 100px;
+    }
+
+    /*sign-up section*/
+    input#signup-username,
+    #signup-password,
+    #confirm-password {
+        line-height: 1.5em;
+    }
+
+    /*User overall numbers section*/
+    section#miles-total div {
+        width: 30%;
+        padding: 12px;
+    }
+
+    section#miles-total div div.card-name {
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    h3#green-car {
+        margin-bottom: 0em;
+    }
+
+    /*convert form section*/
+    input#date,
+    #miles {
+        width: 60%;
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+
+    button#convert-button {
+        width: 80px;
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*Nav*/
+    nav {
+        position: static;
+    }
+
+    nav .demoMessage {
+        position: fixed;
+        top: 0px;
+        left: 40%;
+        background-color: #116466;
+        color: #fff;
+        padding: 10px 5%;
+        width: 30%;
+        text-align: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    nav .demoMessage span,
+    nav .demoMessage a {
+        color: #fff;
+
+    }
+
+    nav .demoMessage a {
+        cursor: pointer;
+        color: yellow;
+    }
+
+    nav .demoMessage #hideBtn {
+        padding: 2px 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    div#nav-logo {
+        width: 80%;
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+    }
+
+    a#main-logo {
+        font-size: 1.1em;
+    }
+
+    div#nav-links {
+        width: 80%;
+        font-size: 0.9em;
+        display: block;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    /*
+    div#sign-in-buttons {
+        width: 40%;
+        margin: 10px auto;
+        display: block;
+    }
+*/
+    div#sign-in-buttons,
+    #js-signin-link,
+    #js-signout-link {
+        margin: 10px auto;
+        width: 40%;
+        text-align: center;
+        display: block;
+    }
+
+    button#js-signout-link {
+        width: 70%;
+    }
+
+    /*sign-in Section*/
+    section#sign-in-section {
+        font-size: 0.8em;
+    }
+
+    label#signin-label,
+    #password-label {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    input#username,
+    #password {
+        width: 80%;
+        font-size: 0.9em;
+        display: block;
+        margin: auto;
+    }
+
+    button#js-signin-button {
+        width: 65px;
+        font-size: 0.9em;
+    }
+
+    /*purpose section*/
+    h2#purpose-header {
+        width: 90%;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+        margin: auto;
+    }
+
+    div#site-description {
+        width: 80%;
+    }
+
+    p#about-one {
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: center;
+        padding: 7px;
+    }
+
+    div#site-infographic {
+        width: 90%;
+        margin: auto;
+    }
+
+    div#how-it-works {
+        font-size: 1em;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    div#submit-screen {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /*signup section*/
+    label#label-username,
+    #label-password,
+    #label-repassword {
+        font-size: 0.9em;
+    }
+
+    input#signup-username,
+    #signup-password,
+    #confirm-password {
+        font-size: 0.8em;
+        width: 70%;
+    }
+
+    button#js-signup-button {
+        font-size: 0.8em;
+    }
+
+    /*User overall numbers section*/
+    section#miles-total div {
+        margin: 5px auto;
+        width: 80%;
+        display: block;
+
+    }
+
+    section#miles-total div div.card-name {
+        font-size: 1.2em;
+    }
+
+    /*convert form section*/
+    form label {
+        font-size: 1em;
+        line-height: 2.0em;
+        display: block;
+    }
+
+    input#date,
+    #miles {
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+        line-height: 2em;
+    }
+
+    button#convert-button {
+        width: 70px;
+        padding: 7px;
+        font-size: 0.8em;
+    }
+
+    /*table section*/
+    table {
+        margin: auto;
+        width: 90%;
+    }
+
+    table th {
+        font-size: 1em;
+    }
+
+    table tr {
+        font-size: 0.8em;
+    }
+
+}
