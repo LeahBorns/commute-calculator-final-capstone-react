@@ -18,10 +18,10 @@ export default function Info(props) {
 
         </div>
         <div id="site-infographic">
-        <img id="infographic" src="/assets/images/co2mmuteInfographic.jpg" alt="cars infographic" />
+        <img id="infographic" src="images/co2mmuteInfographic.jpg" alt="cars infographic" />
         </div>
         <div id="submit-screen">
-        <img src="/assets/images/info-screenshot.jpg" alt="screenshots" />
+        <img src="images/info-screenshot.jpg" alt="screenshots" />
         </div>
         <div id="how-it-works">
         <h3>Calculate your diverted CO<sub>2</sub></h3><br />
