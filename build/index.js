@@ -65039,12 +65039,12 @@
 	        _react2.default.createElement(
 	            'div',
 	            { id: 'site-infographic' },
-	            _react2.default.createElement('img', { id: 'infographic', src: 'images/co2mmuteInfographic.jpg', alt: 'cars infographic' })
+	            _react2.default.createElement('img', { id: 'infographic', src: 'assets/images/co2mmuteInfographic.jpg', alt: 'cars infographic' })
 	        ),
 	        _react2.default.createElement(
 	            'div',
 	            { id: 'submit-screen' },
-	            _react2.default.createElement('img', { src: 'images/info-screenshot.jpg', alt: 'screenshots' })
+	            _react2.default.createElement('img', { src: 'assets/images/info-screenshot.jpg', alt: 'screenshots' })
 	        ),
 	        _react2.default.createElement(
 	            'div',
