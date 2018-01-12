@@ -64,17 +64,25 @@
 	
 	var _info2 = _interopRequireDefault(_info);
 	
+	var _header = __webpack_require__(548);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
 	
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_nav2.default, null), document.getElementById('reactNav'));
+	    return _reactDom2.default.render(_react2.default.createElement(_nav2.default, null), document.getElementById('reactNav'));
 	});
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_info2.default, null), document.getElementById('reactInfo'));
+	    return _reactDom2.default.render(_react2.default.createElement(_info2.default, null), document.getElementById('reactInfo'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
 	});
 
 /***/ }),
@@ -65080,6 +65088,61 @@
 	                    ),
 	                    ' you diverted by commuting'
 	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Header;
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Header(props) {
+	    return _react2.default.createElement(
+	        'section',
+	        { id: 'main-header' },
+	        _react2.default.createElement(
+	            'header',
+	            { id: 'page-title', role: 'banner' },
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Co',
+	                _react2.default.createElement(
+	                    'sub',
+	                    null,
+	                    '2'
+	                ),
+	                'mmute Calculator'
 	            )
 	        )
 	    );
