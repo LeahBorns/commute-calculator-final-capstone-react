@@ -95,15 +95,15 @@ function displayCo2DivertByUsernameTable(tableData) {
         buildTable += '<tr>';
         buildTable += '<td> ' + myTableValue.currentDate + ' </td>';
         buildTable += '<td>' + myTableValue.dailyMileage + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 255.0).toFixed(1) + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 500.0).toFixed(1) + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 708.3).toFixed(1) + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 255).toFixed(1) + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 500).toFixed(1) + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 708).toFixed(1) + '</td>';
         buildTable += '</tr>';
 
         totalMileage = totalMileage + parseInt(myTableValue.dailyMileage);
-        greenCo2 = greenCo2 + myTableValue.dailyMileage * 255.0;
-        SedanCo2 = SedanCo2 + myTableValue.dailyMileage * 500.0;
-        suvCo2 = suvCo2 + myTableValue.dailyMileage * 708.3;
+        greenCo2 = greenCo2 + myTableValue.dailyMileage * 255;
+        SedanCo2 = SedanCo2 + myTableValue.dailyMileage * 500;
+        suvCo2 = suvCo2 + myTableValue.dailyMileage * 708;
     });
 
     //table footer
