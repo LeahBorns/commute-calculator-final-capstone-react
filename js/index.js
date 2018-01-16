@@ -8,6 +8,8 @@ import Nav from '../js/components/nav';
 import Info from '../js/components/info';
 import Header from '../js/components/header';
 import Footer from '../js/components/footer';
+import Signin from '../js/components/signin';
+import Signup from '../js/components/signup';
 
 
 document.addEventListener('DOMContentLoaded', () =>
@@ -25,3 +27,13 @@ document.addEventListener('DOMContentLoaded', () =>
 document.addEventListener('DOMContentLoaded', () =>
     {return ReactDOM.render(<Footer />,
         document.getElementById('reactFooter'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
+    {return ReactDOM.render(<Signin />,
+        document.getElementById('reactSignin'));} );
+
+document.addEventListener('DOMContentLoaded', () =>
+    {return ReactDOM.render(<Signup />,
+        document.getElementById('reactSignup'));} );
+
+

@@ -72,6 +72,14 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _signin = __webpack_require__(550);
+	
+	var _signin2 = _interopRequireDefault(_signin);
+	
+	var _signup = __webpack_require__(551);
+	
+	var _signup2 = _interopRequireDefault(_signup);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -91,6 +99,14 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_signin2.default, null), document.getElementById('reactSignin'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_signup2.default, null), document.getElementById('reactSignup'));
 	});
 
 /***/ }),
@@ -65205,6 +65221,242 @@
 	        )
 	    );
 	}
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	var Signin = function (_React$Component) {
+	    _inherits(Signin, _React$Component);
+	
+	    function Signin(props) {
+	        _classCallCheck(this, Signin);
+	
+	        var _this = _possibleConstructorReturn(this, (Signin.__proto__ || Object.getPrototypeOf(Signin)).call(this, props));
+	
+	        _this.state = {};
+	        return _this;
+	    }
+	
+	    _createClass(Signin, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'section',
+	                { id: 'sign-in-section' },
+	                _react2.default.createElement(
+	                    'header',
+	                    { id: 'sign-in-header' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Sign-in to Co',
+	                        _react2.default.createElement(
+	                            'sub',
+	                            null,
+	                            '2'
+	                        ),
+	                        'mmute Calculator'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'form',
+	                    { id: 'signin-form' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { id: 'signin-label', htmlFor: 'username' },
+	                            ' Username'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'text', placeholder: 'Username', name: 'username', id: 'username' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { id: 'password-label', htmlFor: 'password' },
+	                            'Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', placeholder: 'Password', name: 'password', id: 'password' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        { id: 'js-signin-button', type: 'submit' },
+	                        'Sign in'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Not registered yet? ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#sign-up' },
+	                        'Click here'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Signin;
+	}(_react2.default.Component);
+	
+	exports.default = Signin;
+
+/***/ }),
+/* 551 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	var Signup = function (_React$Component) {
+	    _inherits(Signup, _React$Component);
+	
+	    function Signup(props) {
+	        _classCallCheck(this, Signup);
+	
+	        var _this = _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).call(this, props));
+	
+	        _this.state = {};
+	        return _this;
+	    }
+	
+	    _createClass(Signup, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'section',
+	                { id: 'sign-up' },
+	                _react2.default.createElement(
+	                    'header',
+	                    null,
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Start Calculating'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'form',
+	                    { id: 'signup-form' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { id: 'label-username', htmlFor: 'username' },
+	                            ' Username'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'text', placeholder: 'Username', name: 'username', id: 'signup-username' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { id: 'label-password', htmlFor: 'password' },
+	                            'Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', placeholder: 'Password', name: 'password', id: 'signup-password' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { id: 'label-repassword', htmlFor: 'confirm-password' },
+	                            'Re-enter Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', placeholder: 'Re-enter password', name: 'confirm-password', id: 'confirm-password' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        { id: 'js-signup-button', type: 'submit' },
+	                        'Sign up'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Signup;
+	}(_react2.default.Component);
+	
+	exports.default = Signup;
 
 /***/ })
 /******/ ]);
