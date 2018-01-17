@@ -80,6 +80,18 @@
 	
 	var _signup2 = _interopRequireDefault(_signup);
 	
+	var _totalMiles = __webpack_require__(552);
+	
+	var _totalMiles2 = _interopRequireDefault(_totalMiles);
+	
+	var _dataTable = __webpack_require__(553);
+	
+	var _dataTable2 = _interopRequireDefault(_dataTable);
+	
+	var _milesForm = __webpack_require__(554);
+	
+	var _milesForm2 = _interopRequireDefault(_milesForm);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -107,6 +119,18 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	    return _reactDom2.default.render(_react2.default.createElement(_signup2.default, null), document.getElementById('reactSignup'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_totalMiles2.default, null), document.getElementById('reactTotalMiles'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_dataTable2.default, null), document.getElementById('reactDataTable'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	    return _reactDom2.default.render(_react2.default.createElement(_milesForm2.default, null), document.getElementById('reactMilesForm'));
 	});
 
 /***/ }),
@@ -65457,6 +65481,288 @@
 	}(_react2.default.Component);
 	
 	exports.default = Signup;
+
+/***/ }),
+/* 552 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = TotalMiles;
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function TotalMiles(props) {
+	
+	    return _react2.default.createElement(
+	        'section',
+	        { id: 'miles-total' },
+	        _react2.default.createElement(
+	            'header',
+	            null,
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Total Mileage'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                { id: 'miles-number' },
+	                '500 miles'
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { id: 'green-car' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'card-name' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Fuel Efficient'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { className: 'mpg' },
+	                    '50mpg'
+	                )
+	            ),
+	            _react2.default.createElement('img', { src: 'assets/images/co2mmute-green.png', alt: 'green car' }),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'carbon' },
+	                '50 lbs/co2'
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { id: 'sedan-car' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'card-name' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Average Sedan'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { className: 'mpg' },
+	                    '25.5mpg'
+	                )
+	            ),
+	            _react2.default.createElement('img', { src: 'assets/images/co2mmute-average.png', alt: 'average car' }),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'carbon' },
+	                '100 lbs/co2'
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { id: 'suv-car' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'card-name' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Average SUV'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { className: 'mpg' },
+	                    '18mpg'
+	                )
+	            ),
+	            _react2.default.createElement('img', { src: 'assets/images/co2mmute-suv.png', alt: 'average suv' }),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'carbon' },
+	                '200 lbs/co2'
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 553 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = DataTable;
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function DataTable(props) {
+	    return _react2.default.createElement(
+	        'section',
+	        { id: 'total-table' },
+	        _react2.default.createElement(
+	            'header',
+	            null,
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Miles to date'
+	            )
+	        ),
+	        _react2.default.createElement('table', { id: 'table-data' })
+	    );
+	}
+
+/***/ }),
+/* 554 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(61);
+	
+	__webpack_require__(129);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(131);
+	
+	var _enzymeAdapterReact = __webpack_require__(528);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	var MilesForm = function (_React$Component) {
+	    _inherits(MilesForm, _React$Component);
+	
+	    function MilesForm(props) {
+	        _classCallCheck(this, MilesForm);
+	
+	        var _this = _possibleConstructorReturn(this, (MilesForm.__proto__ || Object.getPrototypeOf(MilesForm)).call(this, props));
+	
+	        _this.state = {};
+	        return _this;
+	    }
+	
+	    _createClass(MilesForm, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'section',
+	                { id: 'miles-input' },
+	                _react2.default.createElement(
+	                    'header',
+	                    null,
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'How many miles did you ride today?'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'form',
+	                    { id: 'miles-form' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'miles' },
+	                            'Date'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'date', name: 'date', id: 'date' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'miles' },
+	                            'Miles'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'text', placeholder: 'Miles', name: 'miles', id: 'miles' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'button',
+	                        { id: 'convert-button', type: 'submit' },
+	                        'Convert'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return MilesForm;
+	}(_react2.default.Component);
+	
+	exports.default = MilesForm;
 
 /***/ })
 /******/ ]);

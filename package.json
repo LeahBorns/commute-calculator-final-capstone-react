@@ -4,7 +4,7 @@
     "description": "Final capstone that will allow bike commuters to calculate the lbs co2 diverted.",
     "main": "js/index.js",
     "directories": {
-        "test": "tests"
+        "test": "test"
     },
     "scripts": {
         "start": "http-server build",

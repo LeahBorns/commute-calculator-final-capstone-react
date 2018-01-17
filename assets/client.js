@@ -95,9 +95,9 @@ function displayCo2DivertByUsernameTable(tableData) {
         buildTable += '<tr>';
         buildTable += '<td> ' + myTableValue.currentDate + ' </td>';
         buildTable += '<td>' + myTableValue.dailyMileage + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 255).toFixed(1) + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 500).toFixed(1) + '</td>';
-        buildTable += '<td>' + (myTableValue.dailyMileage * 708).toFixed(1) + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 255).toLocaleString() + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 500).toLocaleString() + '</td>';
+        buildTable += '<td>' + (myTableValue.dailyMileage * 708).toLocaleString() + '</td>';
         buildTable += '</tr>';
 
         totalMileage = totalMileage + parseInt(myTableValue.dailyMileage);
@@ -110,17 +110,17 @@ function displayCo2DivertByUsernameTable(tableData) {
     buildTable += '<tr>';
     buildTable += '<th>Total</th>';
     buildTable += '<td>' + totalMileage + '</td>';
-    buildTable += '<td>' + greenCo2.toFixed(1) + '</td>';
-    buildTable += '<td>' + SedanCo2.toFixed(1) + '</td>';
-    buildTable += '<td >' + suvCo2.toFixed(1) + '</td>';
+    buildTable += '<td>' + greenCo2.toLocaleString() + '</td>';
+    buildTable += '<td>' + SedanCo2.toLocaleString() + '</td>';
+    buildTable += '<td >' + suvCo2.toLocaleString() + '</td>';
     buildTable += '</tr>';
 
     //send data to the dom
     $('#table-data').html(buildTable);
     $('#miles-number').html(totalMileage + " miles");
-    $('#green-car p.carbon').html(greenCo2.toFixed(1) + " lbs CO<sub>2</sub>");
-    $('#sedan-car p.carbon').html(SedanCo2.toFixed(1) + " lbs CO<sub>2</sub>");
-    $('#suv-car p.carbon').html(suvCo2.toFixed(1) + " lbs CO<sub>2</sub>");
+    $('#green-car p.carbon').html(greenCo2.toLocaleString() + " lbs CO<sub>2</sub>");
+    $('#sedan-car p.carbon').html(SedanCo2.toLocaleString() + " lbs CO<sub>2</sub>");
+    $('#suv-car p.carbon').html(suvCo2.toLocaleString() + " lbs CO<sub>2</sub>");
 
 };
 
@@ -253,6 +253,8 @@ $(document).on('submit', '#miles-form', function (event) {
     const currentDate = $(this).parent().find('#date').val();
     const dailyMileage = $(this).parent().find('#miles').val();
 
+
+
     console.log(currentDate, dailyMileage, loggedinUserName);
 
     if (currentDate.length > 10) {
@@ -277,8 +279,12 @@ $(document).on('submit', '#miles-form', function (event) {
             .done(function (result) {
                 console.log(result);
                 //                alert('Congrats! You completed todays task');
-                displayError('Congrats! You completed todays task');
+                displayError('Congrats! You added a ride');
                 getCo2DivertByUsername(loggedinUserName);
+
+            $('#date').val('');
+            $('#miles').val('');
+
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
