@@ -37,12 +37,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LeahBorns/commute-calculator-final-capstone.git"
+        "url": "git+https://leahborns.github.io/commute-calculator-final-capstone-react/build.git"
     },
     "author": "Leah Borns",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/LeahBorns/commute-calculator-final-capstone/issues"
+        "url": "https://leahborns.github.io/commute-calculator-final-capstone-react/build/issues"
     },
     "dependencies": {
         "bcrypt": "^0.8.7",
@@ -102,5 +102,5 @@
         "sinon-chai": "^2.8.0",
         "webpack": "^1.15.0"
     },
-    "homepage": "https://github.com/LeahBorns/commute-calculator-final-capstone#readme"
+    "homepage": "https://leahborns.github.io/commute-calculator-final-capstone-react/build#readme"
 }
