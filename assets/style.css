@@ -177,6 +177,10 @@ section#sign-in-section {
     background-color: #0375B4;
 }
 
+section#sign-in-section p {
+    color: white;
+}
+
 header#sign-in-header {
     color: white;
     padding-top: 6%;
@@ -523,9 +527,6 @@ table tr:hover {
         font-size: 0.9em;
     }
 
-    section#sign-in-section, p {
-        color: white;
-    }
 
     input#username,
     #password {
