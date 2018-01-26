@@ -33,7 +33,7 @@ export default class Signin extends React.Component {
         </div>
         <button id="js-signin-button" type="submit">Sign in</button>
         </form>
-        <p>Not registered yet? <a href="#sign-up">Click here</a></p>
+        <p id="register">Not registered yet? <a href="#sign-up">Click here</a></p>
         </section>
     )
 }

@@ -228,6 +228,10 @@ button#js-signin-button:hover {
     background-color: #ffe066;
 }
 
+p#register {
+    color: white;
+}
+
 /*Main and purpose section*/
 
 section#main-header {
