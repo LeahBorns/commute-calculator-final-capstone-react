@@ -175,9 +175,6 @@ button#js-signin-link:hover,
 section#sign-in-section {
     padding: 30px 0;
     background-color: #0375B4;
-}
-
-section#sign-in-section, p {
     color: white;
 }
 
