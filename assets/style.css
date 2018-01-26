@@ -177,7 +177,7 @@ section#sign-in-section {
     background-color: #0375B4;
 }
 
-section#sign-in-section p {
+section#sign-in-section, p {
     color: white;
 }
 
