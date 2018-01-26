@@ -521,6 +521,9 @@ table tr:hover {
     /*sign-in Section*/
     section#sign-in-section {
         font-size: 0.9em;
+    }
+
+    section#sign-in-section p {
         color: white;
     }
 
