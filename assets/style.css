@@ -521,6 +521,7 @@ table tr:hover {
     /*sign-in Section*/
     section#sign-in-section {
         font-size: 0.9em;
+        color: white;
     }
 
     input#username,
