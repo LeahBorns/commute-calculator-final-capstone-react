@@ -523,7 +523,7 @@ table tr:hover {
         font-size: 0.9em;
     }
 
-    section#sign-in-section p {
+    section#sign-in-section, p {
         color: white;
     }
 
