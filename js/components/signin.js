@@ -21,6 +21,7 @@ export default class Signin extends React.Component {
         <section id="sign-in-section">
         <header id="sign-in-header">
         <h3>Sign-in to Co<sub>2</sub>mmute Calculator</h3>
+        <p>For demo account use: un: admin pw: admin</p>
         </header>
         <form id="signin-form" >
         <div>
