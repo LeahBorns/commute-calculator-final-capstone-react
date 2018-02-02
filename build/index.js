@@ -65317,6 +65317,16 @@
 	                            '2'
 	                        ),
 	                        'mmute Calculator'
+	                    ),
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'For demo account use: ',
+	                        _react2.default.createElement('br', null),
+	                        'un: TryItOut',
+	                        _react2.default.createElement('br', null),
+	                        ' pw: 1234'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -65350,7 +65360,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'p',
-	                    null,
+	                    { id: 'register' },
 	                    'Not registered yet? ',
 	                    _react2.default.createElement(
 	                        'a',

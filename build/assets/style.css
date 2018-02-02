@@ -175,6 +175,7 @@ button#js-signin-link:hover,
 section#sign-in-section {
     padding: 30px 0;
     background-color: #0375B4;
+    color: white;
 }
 
 header#sign-in-header {
@@ -225,6 +226,10 @@ button#js-signin-button {
 
 button#js-signin-button:hover {
     background-color: #ffe066;
+}
+
+p#register {
+    color: white;
 }
 
 /*Main and purpose section*/
@@ -522,6 +527,7 @@ table tr:hover {
     section#sign-in-section {
         font-size: 0.9em;
     }
+
 
     input#username,
     #password {

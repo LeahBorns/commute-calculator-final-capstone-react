@@ -71,3 +71,10 @@ The app is built with HTML, CSS, JavaScript, jQuery, Node.js and React. All data
 This is v1.0 of the app, but future enhancements are expected to include:
 
 * Enhacements to the sign-in pull down and a bike gif to make it more visually appealing.
+
+#### Notes
+
+Green house gas facts:
+* https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator
+* https://youcanbikethere.com/environmental-benefits/
+* https://www.cars.com/articles/best-and-worst-gas-mileage-2016-1420683223195/
